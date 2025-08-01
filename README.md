@@ -30,4 +30,7 @@ Will validate URLs for Amazon products from any of the Amazon domains (.com, .co
    5. the ASIN is invalid
   
 [UML Diagram](diagram.png)
+
+<img width="1864" height="1463" alt="image" src="https://github.com/user-attachments/assets/a6f23c67-0e41-47b7-a071-39fc915c5a53" />
+
    
