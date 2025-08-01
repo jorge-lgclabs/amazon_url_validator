@@ -29,6 +29,16 @@ Will validate URLs for Amazon products from any of the Amazon domains (.com, .co
    4. the '/dp/' is missing
    5. the ASIN is invalid
   
+Examples:
+1. Request: {"URL": "https://www.amazon.com/Anker-PowerCore-Portable-Charger-Compatible/dp/B09VPHVT2Z/"}
+   Response: {"status": "valid", "ASIN": "B09vPHVT2Z", "domain": "amazon.com"}
+2. Request: {"URL": "https://www.amazon.co.uk/Anker-PowerCore-Portable-Charger-Compatible/dp/B09VPHVT2Z/"}
+   Response: {"status": "valid", "ASIN": "B09vPHVT2Z", "domain": "amazon.co.uk"}
+3. Request: {"URL": "https://www.amaz0n.com/Anker-PowerCore-Portable-Charger-Compatible/dp/B09VPHVT2Z/"}
+   Response: {"status": "invalid", "reason": "invalid domain"}
+4. Request: {"URL": "https://www.amazon.com/Anker-PowerCore-Portable-Charger-Compatible/dp/B09VPHFVT2Z/"}
+   Response: {"status": "invalid", "reason": "invalid ASIN/ISBN"}
+  
 [UML Diagram](diagram.png)
 
 <img width="1864" height="1463" alt="image" src="https://github.com/user-attachments/assets/a6f23c67-0e41-47b7-a071-39fc915c5a53" />
