@@ -28,4 +28,6 @@ Will validate URLs for Amazon products from any of the Amazon domains (.com, .co
    3. the product name is missing
    4. the '/dp/' is missing
    5. the ASIN is invalid
+  
+[UML Diagram](diagram.png)
    
